@@ -14,12 +14,13 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
+ 
 }
 
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/fondo.jpg") top right no-repeat;
+  background: #040404 url("../img/2.gif") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -28,6 +29,9 @@ body::before {
   z-index: -1;
 }
 
+
+
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
@@ -35,16 +39,20 @@ body::before {
 }
 
 a {
-  color: #18d26e;
+  color: #66ccff;
 }
 
 a:hover {
-  color: #35e888;
+  color: #66ccff;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+
+p{
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -74,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h1 a, #header h1 a:hover {
-  color: #fff;
+  color: #000;
   line-height: 1;
   display: inline-block;
 }
@@ -82,12 +90,12 @@ h1, h2, h3, h4, h5, h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 #header h2 span {
-  color: #fff;
-  border-bottom: 2px solid #18d26e;
+  color: #010101;
+  border-bottom: 2px solid #66ccff;
   padding-bottom: 6px;
 }
 
@@ -107,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: #050505;
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -116,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a:hover {
-  background: #18d26e;
+  background: #66ccff;
 }
 
 @media (max-width: 992px) {
@@ -159,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -172,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: #66ccff;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -184,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -278,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -330,7 +338,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255,255,255,0.8);
   padding: 30px;
 }
 
@@ -351,7 +359,7 @@ section .container {
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -360,7 +368,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: #66ccff;
   margin: 4px 10px;
 }
 
@@ -371,35 +379,47 @@ section .container {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #080808;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about-me{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: #66ccff;
 }
 
 .about-me .content ul {
+  color: #000;
   list-style: none;
   padding: 0;
 }
 
 .about-me .content ul li {
   padding-bottom: 10px;
+  color: #000;
 }
 
 .about-me .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #18d26e;
+  color: #66ccff;
+}
+
+.about-mee{
+  color: #000;
 }
 
 .about-me .content p:last-child {
   margin-bottom: 0;
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -425,7 +445,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #18d26e;
+  color: #66ccff;
   border-radius: 50px;
 }
 
@@ -433,7 +453,7 @@ section .container {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #fff;
+  color: #000;
 }
 
 .counts .count-box p {
@@ -446,6 +466,10 @@ section .container {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+.skills{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 .skills .progress {
   height: 50px;
   display: block;
@@ -459,7 +483,7 @@ section .container {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #000;
 }
 
 .skills .progress .skill .val {
@@ -475,7 +499,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #18d26e;
+  background-color: #66ccff;
 }
 
 /*--------------------------------------------------------------
@@ -501,7 +525,7 @@ section .container {
   padding: 0;
   line-height: 1;
   font-size: 16px;
-  color: #fff;
+  color: #000;
 }
 
 .interests .icon-box:hover {
@@ -655,9 +679,12 @@ section .container {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.serviciess{
+  border-radius: 20px;
+}
+
 .services .icon-box {
   text-align: center;
-  background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
@@ -666,7 +693,7 @@ section .container {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #18d26e;
+  background: #66ccff;
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   display: flex;
@@ -683,7 +710,7 @@ section .container {
 
 
 .services .icon-box .icon i {
-  color: #fff;
+  color: #000;
   font-size: 28px;
 }
 
@@ -707,7 +734,7 @@ section .container {
 }
 
 .services .icon-box h4 a {
-  color: #fff;
+  color: #000;
 }
 
 .services .icon-box p {
@@ -717,24 +744,24 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
+  background: #66ccff;
+  border-color: #66ccff;
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: #000;
 }
 
 .services .icon-box:hover .icon i  {
-  color: #18d26e;
+  color: #66ccff;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #66ccff;
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
-  color: #fff;
+  color: #000;
 }
 
 
@@ -766,7 +793,7 @@ section .container {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   background: rgba(255, 255, 255, 0.1);
   margin: 0 3px 10px 3px;
   transition: all 0.3s ease-in-out;
@@ -774,7 +801,7 @@ section .container {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: #66ccff;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -874,7 +901,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+  color: #66ccff;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -902,8 +929,12 @@ section .container {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contacto{
+  border-radius: 20px;
+}
+
 .contact .info-box {
-  color: #444444;
+  color: #000;
   padding: 20px;
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
@@ -911,7 +942,7 @@ section .container {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #18d26e;
+  color: #66ccff;
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -920,14 +951,14 @@ section .container {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
 
 .contact .info-box p {
   padding: 0;
-  color: #fff;
+  color: #000;
   line-height: 24px;
   font-size: 14px;
   margin: 0 0 0 68px;
@@ -941,14 +972,14 @@ section .container {
 .contact .info-box .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #fff;
+  color: #000;
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
 }
 
 .contact .info-box .social-links a:hover {
-  color: #18d26e;
+  color: #66ccff;
 }
 
 .contact .php-email-form {
@@ -982,7 +1013,7 @@ section .container {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
+  background: #66ccff;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1002,49 +1033,25 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #66ccff;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
 
 .contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 10px;
   box-shadow: none;
   font-size: 14px;
   background: rgba(255, 255, 255, 0.08);
   border: 0;
   transition: 0.3s;
-  color: #fff;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  background-color: rgba(255, 255, 255, 0.11);
-}
-
-.contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .php-email-form input:-ms-input-placeholder, .contact .php-email-form textarea:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .php-email-form input::-ms-input-placeholder, .contact .php-email-form textarea::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
+.placeholder{
+  color: #000;
 }
 
 .contact .php-email-form input {
@@ -1056,16 +1063,16 @@ section .container {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #18d26e;
+  background: #66ccff;
   border: 0;
   padding: 10px 30px;
-  color: #fff;
+  color: #000;
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #15bb62;
+  background: #66ccff;
 }
 
 @-webkit-keyframes animate-loading {
