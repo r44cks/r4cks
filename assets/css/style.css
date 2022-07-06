@@ -20,7 +20,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/anache.gif") top right no-repeat;
+  background: #040404 url("../img/FONDOFINAL_Mesa\ de\ trabajo\ 1.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -383,7 +383,7 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# About
+# }t
 --------------------------------------------------------------*/
 .about-me{
   border-top-left-radius: 20px;
